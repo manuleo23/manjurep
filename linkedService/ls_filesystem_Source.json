@@ -1,0 +1,17 @@
+{
+	"name": "ls_filesystem_Source",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "FileServer",
+		"typeProperties": {
+			"host": "C:\\Users",
+			"userId": "manjunath yerrojodu",
+			"encryptedCredential": "eyJDcmVkZW50aWFsSWQiOiJkMjE5MTk5OC03MWIwLTQ3ZDEtYjk1OC1lZWM0NWE4ZDc0Y2EiLCJWZXJzaW9uIjoiMi4wIiwiQ2xhc3NUeXBlIjoiTWljcm9zb2Z0LkRhdGFQcm94eS5Db3JlLkludGVyU2VydmljZURhdGFDb250cmFjdC5DcmVkZW50aWFsU1UwNkNZMTQifQ=="
+		},
+		"connectVia": {
+			"referenceName": "selfhostedIR",
+			"type": "IntegrationRuntimeReference"
+		}
+	}
+}
