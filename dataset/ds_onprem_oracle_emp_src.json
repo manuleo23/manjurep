@@ -1,0 +1,19 @@
+{
+	"name": "ds_onprem_oracle_emp_src",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_oracle_service",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "onprimeses_migration"
+		},
+		"annotations": [],
+		"type": "OracleTable",
+		"schema": [],
+		"typeProperties": {
+			"schema": "XE",
+			"table": "DEPT"
+		}
+	}
+}
