@@ -1,0 +1,27 @@
+{
+	"name": "ds_blob_getmetadata",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_Azure_Blob_Storage",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"container": "testdata"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "Prop_0|Prop_1|Prop_2|Prop_3|Prop_4|Prop_5|Prop_6|Prop_7",
+				"type": "String"
+			}
+		]
+	}
+}
