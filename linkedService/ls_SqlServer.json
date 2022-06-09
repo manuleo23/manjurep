@@ -1,0 +1,26 @@
+{
+	"name": "ls_SqlServer",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"description": "ls for sql server",
+		"parameters": {
+			"ServerName": {
+				"type": "string"
+			},
+			"DBName": {
+				"type": "string"
+			},
+			"UserName": {
+				"type": "string"
+			},
+			"Password": {
+				"type": "string"
+			}
+		},
+		"annotations": [],
+		"type": "SqlServer",
+		"typeProperties": {
+			"connectionString": "Integrated Security=False;Data Source=@{linkedService().ServerName};Initial Catalog=@{linkedService().DBName};User ID=@{linkedService().UserName};Password=@{linkedService().Password}"
+		}
+	}
+}
