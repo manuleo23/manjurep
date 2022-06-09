@@ -1,0 +1,57 @@
+{
+	"name": "dataset_sqltable",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_SqlServer",
+			"type": "LinkedServiceReference",
+			"parameters": {
+				"ServerName": {
+					"value": "@dataset().servername",
+					"type": "Expression"
+				},
+				"DBName": {
+					"value": "@dataset().dbname",
+					"type": "Expression"
+				},
+				"UserName": {
+					"value": "@dataset().username",
+					"type": "Expression"
+				},
+				"Password": {
+					"value": "@dataset().password",
+					"type": "Expression"
+				}
+			}
+		},
+		"parameters": {
+			"tablename": {
+				"type": "string"
+			},
+			"dbname": {
+				"type": "string"
+			},
+			"servername": {
+				"type": "string"
+			},
+			"username": {
+				"type": "string"
+			},
+			"password": {
+				"type": "string"
+			}
+		},
+		"annotations": [],
+		"type": "SqlServerTable",
+		"schema": [],
+		"typeProperties": {
+			"schema": {
+				"value": "@dataset().dbname",
+				"type": "Expression"
+			},
+			"table": {
+				"value": "@dataset().tablename",
+				"type": "Expression"
+			}
+		}
+	}
+}
