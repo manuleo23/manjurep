@@ -16,14 +16,9 @@
 				"userProperties": [],
 				"typeProperties": {
 					"source": {
-						"type": "BinarySource",
-						"storeSettings": {
-							"type": "FileServerReadSettings",
-							"recursive": true
-						},
-						"formatSettings": {
-							"type": "BinaryReadSettings"
-						}
+						"type": "OracleSource",
+						"partitionOption": "None",
+						"queryTimeout": "02:00:00"
 					},
 					"sink": {
 						"type": "DelimitedTextSink",
@@ -40,7 +35,7 @@
 				},
 				"inputs": [
 					{
-						"referenceName": "ds_filesource_emp",
+						"referenceName": "ds_onprem_oracle_emp_src",
 						"type": "DatasetReference"
 					}
 				],
